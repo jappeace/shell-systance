@@ -1,7 +1,12 @@
 #! /bin/bash
 # I use this script to update my system by executing evry script in the update folder.
-folder="/usr/local/update"
-doUpdate(){
+if[$1 == ""]
+then
+	folder="/usr/local/update"
+else
+	folder=$1
+fi
+interpetFolder(){
 	echo "changing working directory to script folder"
 	cd $folder;
 
@@ -14,7 +19,6 @@ doUpdate(){
 		)
 	done
 }
-
 echo "checking for root priviliges"
 # if you do not whish to be root remove replace the following line with doUpdate
-mkdir /someDir && rm -r /someDir && echo "executing commands" && doUpdate
+mkdir /someDir && rm -r /someDir && echo "executing commands" && interpetFolder
