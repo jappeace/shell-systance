@@ -1,10 +1,11 @@
 #! /bin/bash
 # put direct git repopository symbolic links in /etc/repository.d/linkname.git
 # or use containing folders like ~/.vim/bundle
-for directory in `ls /etc/repository.d/*.git`
+path="/etc/repository.d/"
+for directory in `ls $path`
 do
+	cd $path$directory
 	(
-		cd $directory
 		sudo git pull
 	)
 	for d in `ls`
