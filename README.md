@@ -7,3 +7,8 @@ bash-git-pull
 =============
 
 A script that traverses configured folders and pulls the git repos
+
+bash-update-environment
+=======================
+
+updates the envoirement
