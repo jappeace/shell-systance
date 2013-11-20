@@ -1,3 +1,4 @@
+#! /bin/bash
 #if you don't have eix, get it. Its way better then the default emerge search.
 # and it integrates layman rysincing in one command.
 echo "rsyncing" #is alwasy a good idea

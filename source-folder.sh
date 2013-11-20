@@ -2,7 +2,7 @@
 # I use this script to update my system by executing evry script in the update folder.
 if ["$1" = ""];
 then
-	folder="/etc/update"
+	folder="/etc/update/exec"
 else
 	folder=$1
 fi

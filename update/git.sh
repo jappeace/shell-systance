@@ -1,7 +1,7 @@
 #! /bin/bash
 # put direct git repopository symbolic links in /etc/repository.d/linkname.git
 # or use containing folders like ~/.vim/bundle
-path="/etc/repository.d/"
+path="/etc/update/git/"
 for directory in `ls $path`
 do
 	cd $path$directory
