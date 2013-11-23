@@ -9,7 +9,6 @@ updating becomes a breeze
 ##configuration
 
 symlink the scripts you want from /etc/update/exec (or put your own shells in there). then sysmlink source-folder to /usr/local/bin/"commandname"
-source-folder defaults to /etc/update/exec
 
 ##source-folder
 
